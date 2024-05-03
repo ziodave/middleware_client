@@ -1,7 +1,6 @@
 .github/workflows/python.yml
 .gitignore
 .gitlab-ci.yml
-.openapi-generator-ignore
 .travis.yml
 README.md
 docs/AutocompleteApi.md
@@ -32,10 +31,4 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_autocomplete_api.py
-test/test_autocomplete_result.py
-test/test_autocomplete_result_list.py
-test/test_batch_request.py
-test/test_dataset_api.py
-test/test_entities_api.py
 tox.ini
