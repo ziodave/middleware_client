@@ -1,0 +1,42 @@
+diff --git a/middleware_client/__init__.py b/middleware_client/__init__.py
+index a99fd38..17b72b3 100644
+--- a/middleware_client/__init__.py
++++ b/middleware_client/__init__.py
+@@ -18,7 +18,6 @@
+ __version__ = "1.0.0"
+ 
+ # import apis into sdk package
+-from middleware_client.api.autocomplete_api import AutocompleteApi
+ from middleware_client.api.dataset_api import DatasetApi
+ from middleware_client.api.entities_api import EntitiesApi
+ 
+@@ -34,6 +33,4 @@ from middleware_client.exceptions import ApiAttributeError
+ from middleware_client.exceptions import ApiException
+ 
+ # import models into sdk package
+-from middleware_client.models.autocomplete_result import AutocompleteResult
+-from middleware_client.models.autocomplete_result_list import AutocompleteResultList
+ from middleware_client.models.batch_request import BatchRequest
+diff --git a/middleware_client/api/__init__.py b/middleware_client/api/__init__.py
+index 1a9edef..a118693 100644
+--- a/middleware_client/api/__init__.py
++++ b/middleware_client/api/__init__.py
+@@ -1,7 +1,6 @@
+ # flake8: noqa
+ 
+ # import apis into api package
+-from middleware_client.api.autocomplete_api import AutocompleteApi
+ from middleware_client.api.dataset_api import DatasetApi
+ from middleware_client.api.entities_api import EntitiesApi
+ 
+diff --git a/middleware_client/models/__init__.py b/middleware_client/models/__init__.py
+index 289a1e4..edda9b8 100644
+--- a/middleware_client/models/__init__.py
++++ b/middleware_client/models/__init__.py
+@@ -15,6 +15,4 @@
+ 
+ 
+ # import models into model package
+-from middleware_client.models.autocomplete_result import AutocompleteResult
+-from middleware_client.models.autocomplete_result_list import AutocompleteResultList
+ from middleware_client.models.batch_request import BatchRequest

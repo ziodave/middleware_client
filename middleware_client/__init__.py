@@ -18,7 +18,6 @@
 __version__ = "1.0.0"
 
 # import apis into sdk package
-from middleware_client.api.autocomplete_api import AutocompleteApi
 from middleware_client.api.dataset_api import DatasetApi
 from middleware_client.api.entities_api import EntitiesApi
 
@@ -34,6 +33,4 @@ from middleware_client.exceptions import ApiAttributeError
 from middleware_client.exceptions import ApiException
 
 # import models into sdk package
-from middleware_client.models.autocomplete_result import AutocompleteResult
-from middleware_client.models.autocomplete_result_list import AutocompleteResultList
 from middleware_client.models.batch_request import BatchRequest
