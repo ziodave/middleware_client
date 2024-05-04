@@ -28,7 +28,7 @@ class BatchRequest(BaseModel):
     A request part of a batch.
     """ # noqa: E501
     uri: StrictStr = Field(description="The entity URI.")
-    model: StrictStr = Field(description="A string containing the Structured Data.")
+    model: List[Dict[str, Any]] = Field(description="A model containing the Structured Data.")
     private: Optional[StrictBool] = Field(default=None, description="Whether the entity should be hidden from Linked Data and GraphQL.")
     __properties: ClassVar[List[str]] = ["uri", "model", "private"]
 

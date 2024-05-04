@@ -15,4 +15,6 @@
 
 
 # import models into model package
+from middleware_client.models.autocomplete_result import AutocompleteResult
+from middleware_client.models.autocomplete_result_list import AutocompleteResultList
 from middleware_client.models.batch_request import BatchRequest

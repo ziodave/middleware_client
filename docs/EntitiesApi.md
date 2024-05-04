@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **create_entities**
-> str create_entities(body)
+> List[object] create_entities(body)
 
 Create
 
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**str**
+**List[object]**
 
 ### Authorization
 
@@ -90,7 +90,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_or_update_entities**
-> create_or_update_entities(body)
+> create_or_update_entities(request_body)
 
 Update (or create)
 
@@ -126,11 +126,11 @@ configuration.api_key['ApiKey'] = os.environ["API_KEY"]
 async with middleware_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = middleware_client.EntitiesApi(api_client)
-    body = 'body_example' # str | 
+    request_body = None # List[object] | 
 
     try:
         # Update (or create)
-        await api_instance.create_or_update_entities(body)
+        await api_instance.create_or_update_entities(request_body)
     except Exception as e:
         print("Exception when calling EntitiesApi->create_or_update_entities: %s\n" % e)
 ```
@@ -142,7 +142,7 @@ async with middleware_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | **str**|  | 
+ **request_body** | [**List[object]**](object.md)|  | 
 
 ### Return type
 
@@ -248,7 +248,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_entities**
-> str get_entities(id, include_children=include_children, include_referenced=include_referenced, include_private=include_private)
+> List[object] get_entities(id, include_children=include_children, include_referenced=include_referenced, include_private=include_private)
 
 Get
 
@@ -312,7 +312,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**str**
+**List[object]**
 
 ### Authorization
 

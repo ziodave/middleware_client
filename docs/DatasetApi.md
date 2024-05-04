@@ -92,7 +92,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_or_update_entity**
-> create_or_update_entity(uri, body, private=private)
+> create_or_update_entity(uri, request_body, private=private)
 
 Create or update one
 
@@ -129,12 +129,12 @@ async with middleware_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = middleware_client.DatasetApi(api_client)
     uri = 'uri_example' # str | The entity's URI
-    body = 'body_example' # str | 
+    request_body = None # List[object] | 
     private = True # bool | Whether the entity should be hidden from Linked Data and GraphQL (optional) (default to True)
 
     try:
         # Create or update one
-        await api_instance.create_or_update_entity(uri, body, private=private)
+        await api_instance.create_or_update_entity(uri, request_body, private=private)
     except Exception as e:
         print("Exception when calling DatasetApi->create_or_update_entity: %s\n" % e)
 ```
@@ -147,7 +147,7 @@ async with middleware_client.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **uri** | **str**| The entity&#39;s URI | 
- **body** | **str**|  | 
+ **request_body** | [**List[object]**](object.md)|  | 
  **private** | **bool**| Whether the entity should be hidden from Linked Data and GraphQL | [optional] [default to True]
 
 ### Return type
